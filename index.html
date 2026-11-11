@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Typing Speed Test</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+     <!-- Background gradient: from-slate-900 via-teal-900 to-indigo-900 -->
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-teal-900 to-indigo-900 text-teal-50 flex items-center justify-center p-4">
+  <main class="w-full max-w-2xl space-y-6">
+
+    <h1 class="text-3xl font-bold text-center text-amber-300">Typing Speed Test</h1>
+
+    <!-- Stats -->
+    <div class="grid grid-cols-3 gap-4 text-center">
+      <div class="bg-white/10 backdrop-blur rounded-lg p-4 border border-white/20">
+        <p class="text-sm text-teal-200">Time</p>
+        <p id="time" class="text-2xl font-semibold text-amber-300">60</p>
+      </div>
+      <div class="bg-white/10 backdrop-blur rounded-lg p-4 border border-white/20">
+        <p class="text-sm text-teal-200">WPM</p>
+        <p id="wpm" class="text-2xl font-semibold text-amber-300">0</p>
+      </div>
+      <div class="bg-white/10 backdrop-blur rounded-lg p-4 border border-white/20">
+        <p class="text-sm text-teal-200">Accuracy</p>
+        <p id="accuracy" class="text-2xl font-semibold text-amber-300">100%</p>
+      </div>
+    </div>
+
+    <!-- Sentence to type -->
+    <p id="quote" class="bg-white/10 backdrop-blur rounded-lg p-4 text-lg leading-relaxed border border-white/20">
+      Your sentence will appear here.
+    </p>
+
+    <!-- Typing area -->
+    <textarea id="input" rows="3" placeholder="Start typing to begin..."
+      class="w-full rounded-lg bg-black/30 p-4 text-teal-50 placeholder-teal-300/60 outline-none focus:ring-2 focus:ring-amber-400"></textarea>
+
+    <!-- Restart button -->
+    <button id="restart"
+      class="w-full rounded-lg bg-amber-400 hover:bg-amber-500 text-slate-900 py-2 font-semibold transition">
+      Restart
+    </button>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
